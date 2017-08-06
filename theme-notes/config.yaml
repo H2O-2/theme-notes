@@ -1,0 +1,23 @@
+# Site info
+rootDir: '/'
+archiveDir: '/archive'
+postDir: '/post'
+siteIcon: './favicon.ico'
+Header:
+  About: '/about'
+
+# Index page
+postPerPage: 5
+
+# Post page
+share:
+  - 'QQ',
+  - 'WeChat',
+  - 'Qzone',
+  - 'SinaWeibo',
+  # - 'QQWeibo',
+  # - 'Douban'
+  - 'Facebook',
+  - 'Twitter',
+  # - 'LinkedIn'
+  # - 'Google+'
