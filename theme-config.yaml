@@ -1,0 +1,30 @@
+##############################################################
+##################         Index page        #################
+##############################################################
+
+postPerPage: 5 # maximum number of posts displayed per a page
+
+# specify what links do you want the header of the page have, the name of the link will be the key, e.g. About
+header:
+  About: '/about'
+
+
+
+##############################################################
+##################         Post page         #################
+##############################################################
+
+autoComment: false # display disqus comment by default (note that disqus not accessible in China)
+
+# share icons that you want to display beside your posts.
+share:
+  - 'QQ',
+  - 'WeChat',
+  - 'Qzone',
+  - 'SinaWeibo',
+  # - 'QQWeibo',
+  # - 'Douban'
+  - 'Facebook',
+  - 'Twitter',
+  # - 'LinkedIn'
+  # - 'Google+'
