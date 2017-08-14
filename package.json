@@ -3,15 +3,24 @@
   "version": "1.0.0",
   "description": "Blog theme made for Ritsu. Simple & Elegant.",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "normalize.css": "^7.0.0"
+  },
   "devDependencies": {
     "@types/ejs": "^2.3.33",
+    "@types/fs-extra": "^4.0.0",
+    "@types/js-yaml": "^3.9.0",
     "@types/node": "^8.0.20",
     "ejs": "^2.5.7",
+    "fs-extra": "^4.0.1",
+    "js-yaml": "^3.9.1",
     "typescript": "^2.4.2"
   },
   "scripts": {
-    "ejs": "tsc; node dist/test"
+    "build": "sudo tsc; node dist/test",
+    "ejs": "node dist/test"
   },
   "repository": {
     "type": "git",

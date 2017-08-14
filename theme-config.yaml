@@ -18,13 +18,13 @@ autoComment: false # display disqus comment by default (note that disqus not acc
 
 # share icons that you want to display beside your posts.
 share:
-  - 'QQ',
-  - 'WeChat',
-  - 'Qzone',
-  - 'SinaWeibo',
-  # - 'QQWeibo',
+  - 'QQ'
+  - 'WeChat'
+  - 'Qzone'
+  - 'SinaWeibo'
+  # - 'QQWeibo'
   # - 'Douban'
-  - 'Facebook',
-  - 'Twitter',
+  - 'Facebook'
+  - 'Twitter'
   # - 'LinkedIn'
   # - 'Google+'
