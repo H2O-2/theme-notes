@@ -1,0 +1,26 @@
+{
+  "name": "theme-notes",
+  "version": "1.0.0",
+  "description": "Blog theme made for Ritsu. Simple & Elegant.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/ejs": "^2.3.33",
+    "@types/node": "^8.0.20",
+    "ejs": "^2.5.7",
+    "typescript": "^2.4.2"
+  },
+  "scripts": {
+    "ejs": "tsc; node dist/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/H2O-2/theme-notes.git"
+  },
+  "author": "H2O2",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/H2O-2/theme-notes/issues"
+  },
+  "homepage": "https://github.com/H2O-2/theme-notes#readme"
+}
