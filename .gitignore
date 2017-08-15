@@ -45,4 +45,4 @@ Thumbs.db
 bower_components/
 node_modules/
 
-test.ts
+theme-demo/

@@ -9,6 +9,7 @@ author: 'Kawai Ritsu' # the name of author
 siteIcon: 'favicon.ico' # the path to site icon
 createTime: '2017' # creation time of the site
 avatar: 'avatar.jpg' # avatar of user
+shortDescription: 'Ritsu@Kawaisou' # short description of yourself
 personalPage: 'https://github.com/H2O-2' # personal page of user
 
 #Open Graph Data

@@ -1,0 +1,10 @@
+<header>
+    <span id="hide-side">
+        <i class="fa fa-angle-double-left"></i>
+    </span>
+    <span id="nav">
+    <% for (var prop in theme.header) { %>
+        <a class="nav-links" href="<%= theme.header[prop] %>"><%= prop %></a>
+    <% } %>
+    </span>
+</header>

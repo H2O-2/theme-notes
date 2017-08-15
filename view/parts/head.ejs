@@ -12,7 +12,7 @@
         <% } %>
     <% } %>
     <title>
-        <% if (site.siteSubTitle) { %>
+        <% if (site.siteSubTitle && site.siteSubTitle.length > 0) { %>
             <%= site.siteName %> - <%= site.siteSubTitle %>
         <% } else { %>
             <%= site.siteName %>
