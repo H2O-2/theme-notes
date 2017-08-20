@@ -1,10 +1,11 @@
 <header>
-    <span id="hide-side">
+    <span class="sidebar-op left-top" id="hide-side" title="隐藏侧边栏">
         <i class="fa fa-angle-double-left"></i>
     </span>
+    <span class="site-name-op left-top" id="site-name">Kawaisou</span>
     <span id="nav">
-    <% for (var prop in theme.header) { %>
-        <a class="nav-links" href="<%= theme.header[prop] %>"><%= prop %></a>
-    <% } %>
+        <% for (var prop in theme.header) { %>
+            <a class="nav-links" href="<%= theme.header[prop] %>" title="<%= theme.header[prop] %>"><%= prop %></a>
+        <% } %>
     </span>
 </header>

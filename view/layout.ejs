@@ -3,9 +3,17 @@
     <%- include('parts/head'); %>
 
     <body>
-        <%- include('parts/header'); %>
-        <%- include('parts/sidebar'); %>
-        <%# contents %>
-        <%- include('parts/footer'); %>
+        <div class="container-fluid wrapper">
+            <div class="row">
+                <div class="col-md-3 sidebar"><%- include('parts/sidebar'); %></div>
+                <div class="col-md-9 col-md-offset-3 main">
+                    <div class="main-wrapper">
+                        <%- include('parts/header'); %>
+                        <%# contents %>
+                        <%- include('parts/footer'); %>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
