@@ -1,0 +1,71 @@
+@import url('../node_modules/normalize.css/normalize.css');
+@import url('../node_modules/bootstrap/dist/css/bootstrap.min.css');
+@import url('../node_modules/font-awesome/css/font-awesome.min.css');
+
+@import "globals";
+
+
+body, html {
+  background: $background-color;
+  font-family: "Open Sans", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft JhengHei", "Microsoft YaHei", sans-serif;
+  font-weight: 400;
+  color: $grey;
+  letter-spacing: 0.02rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+}
+
+a {
+  color: $grey;
+  text-decoration: none;
+
+  &:hover {
+    color: $deep-grey;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: $deep-grey;
+  font-weight: 400;
+
+  &:hover {
+    color: black;
+
+  }
+}
+
+hr {
+  border-color: $shallow-grey;
+  opacity: .4;
+}
+
+// Make col-md-3.5
+@media (min-width: 769px) {
+  .col-md-3 {
+    width: 26%;
+  }
+
+  .col-md-9 {
+    width: 74%;
+  }
+
+  .col-md-offset-3 {
+    margin-left: 26%;
+  }
+}
+
+// Tag colour
+.tags {
+  &, & a {
+    font-size: 1rem;
+    color: $shallow-grey;
+  }
+
+  a:hover {
+    color: $grey;
+  }
+}
