@@ -1,6 +1,7 @@
-@import url("../../node_modules/normalize.css/normalize.css");
-@import url("../../node_modules/bootstrap/dist/css/bootstrap.min.css");
-@import url("../../node_modules/font-awesome/css/font-awesome.min.css");
+@import url("https://cdn.jsdelivr.net/normalize/7.0.0/normalize.css");
+@import url("https://cdn.jsdelivr.net/bootstrap/3.3.7/css/bootstrap.min.css");
+@import url("https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css");
+@import url("https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.12.0/build/styles/atom-one-dark.min.css");
 body, html {
   background: #f0f0f0;
   font-family: "Open Sans", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft JhengHei", "Microsoft YaHei", sans-serif;
@@ -25,6 +26,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
   h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
     color: black; }
+
+pre {
+  padding: 0; }
+
+.content .hljs {
+  padding: 1em; }
 
 hr {
   border-color: #a9a9a9;
@@ -110,33 +117,6 @@ hr {
   .main .content {
     padding-top: 6rem;
     margin-bottom: 5rem; }
-    .main .content .blog-content {
-      margin-right: 2.8rem;
-      padding-left: 0;
-      padding-right: 0; }
-      .main .content .blog-content article .article-head {
-        margin: 1.5rem 0 3rem 0; }
-        .main .content .blog-content article .article-head h3 {
-          display: inline-block;
-          margin: 0;
-          max-width: 80%; }
-        .main .content .blog-content article .article-head a {
-          font-size: 2.2rem;
-          color: #3d3d3d; }
-          .main .content .blog-content article .article-head a:hover {
-            color: black; }
-      .main .content .blog-content article p {
-        padding-bottom: 2.5rem;
-        font-size: 1.5rem;
-        max-width: 80%; }
-      .main .content .blog-content article .tags {
-        max-width: 80%; }
-      .main .content .blog-content article hr {
-        margin: 3rem 0 3rem 0; }
-      .main .content .blog-content .date {
-        color: #a9a9a9;
-        font-size: 1.2rem;
-        float: right; }
   .main .index-nav {
     margin-bottom: 12rem;
     font-size: 1.8rem; }
@@ -180,4 +160,4 @@ hr {
     .main .content .blog-content article .article-head h3, .main .content .blog-content article p {
       max-width: 100%; } }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=post.css.map */

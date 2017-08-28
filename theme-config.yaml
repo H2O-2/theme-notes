@@ -10,6 +10,8 @@ sidebarBg: './side.jpg' # a dark tone image is recommended
 postPerPage: 5 # maximum number of posts displayed per a page
 
 # specify what links do you want the header of the page have, the name of the link will be the key, e.g. About
+# Put relative path (start with '/') if you want a new page, or absolute path if you want a redirect. EJS file
+# of the new page should be in the root of view folder.
 header:
   About: '/about'
 
