@@ -4,8 +4,12 @@
     </span>
     <span class="site-name-op left-top" id="site-name">Kawaisou</span>
     <span id="nav">
-        <% for (var prop in theme.header) { %>
-            <a class="nav-links" href="<%= theme.header[prop] %>" title="<%= prop %>"><%= prop %></a>
+        <% if (useBack !== true) { %>
+            <% for (var prop in theme.header) { %>
+                <a class="nav-links" href="<%= theme.header[prop] %>" title="<%= prop %>"><%= prop %></a>
+            <% } %>
+        <% } else { %>
+            <a class="nav-links" href="<%= site.rootDir %>" title="Back to index">Back</a>
         <% } %>
     </span>
 </header>
