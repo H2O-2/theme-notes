@@ -1,4 +1,4 @@
-<div class="content">
+<div class="content index">
     <div class="container-fluid blog-content">
         <div class="row">
             <article class="col-md-12">
@@ -11,48 +11,23 @@
                 <hr>
             </article>
         </div>
-        <div class="row">
-            <article class="col-md-12">
-                <div class="article-head">
-                    <h3><a>第二篇文章是长标题测试，标题标题标题标题标题标题标题标题标题标题标题</a></h3>
-                    <span class="date index-date">Feb 8th, 1997</span>
-                </div>
-                <p>这是第二篇文章，测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试。</p>
-                <span class="tags"><i><a>tag1</a></i>, <i><a>标签2</a></i></span>
-                <hr>
-            </article>
-        </div>
-        <div class="row">
-            <article class="col-md-12">
-                <div class="article-head">
-                    <h3><a>This is the third post</a></h3>
-                    <span class="date index-date">Feb 8th, 1997</span>
-                </div>
-                <p>This is the third post. test test test test test.</p>
-                <span class="tags"><i><a>tag1</a></i>, <i><a>标签2</a></i></span>
-                <hr>
-            </article>
-        </div>
-        <div class="row">
-            <article class="col-md-12">
-                <div class="article-head">
-                    <h3><a>四つ目のポスト</a></h3>
-                    <span class="date index-date">Feb 8th, 1997</span>
-                </div>
-                <p>これは四つ目のポストです、テストテストテストテスト</p>
-                <span class="tags"><i><a>tag1</a></i>, <i><a>标签2</a></i></span>
-                <hr>
-            </article>
-        </div>
-        <div class="row">
-            <article class="col-md-12">
-                <div class="article-head">
-                    <h3><a>第一篇文章</a></h3>
-                    <span class="date index-date">Feb 8th, 1997</span>
-                </div>
-                <p>这是第一篇文章，测试测试测试测试。</p>
-                <span class="tags"><i><a>tag1</a></i>, <i><a>标签2</a></i></span>
-            </article>
-        </div>
+        <% page.postArr.forEach(function (post) { %>
+            <div class="row">
+                <article class="col-md-12">
+                    <div class="article-head">
+                        <h3><a><%- post.title %></a></h3>
+                        <span class="date index-date"><%- post.formatedDate %></span>
+                    </div>
+                    <p><%- post.description %></p>
+                    <span class="tags">
+                        <% post.tags.forEach(function (tag) { %>
+                            <i><a><%- tag %></a></i>
+                        <% }); %>
+                    </span>
+                    <hr>
+                </article>
+            </div>
+        <% }); %>
     </div>
+    <%- include('parts/nav') %>
 </div>
