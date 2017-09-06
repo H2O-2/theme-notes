@@ -3,20 +3,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="author" content="<%= site.author %>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="<%= site.siteDescription %>">
+    <% if (!isIndex && page.description) { %>
+        <meta name="description" content="<%= page.description -%>">
+    <% } else { %>
+        <meta name="description" content="<%= site.siteDescription -%>">
+    <% } %>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <% if (site.og) { %>
         <% for (var prop in site.og) { %>
-            <meta name="og:<%= prop %>" content="<%= site.og[prop] %>">
+            <meta name="og:<%= prop %>" content="<%= site.og[prop] -%>">
         <% } %>
     <% } %>
     <title>
+        <% if (!isIndex) { %>
+           <%= page.title -%> |
+        <% } %>
         <% if (site.siteSubTitle && site.siteSubTitle.length > 0) { %>
-            <%= site.siteName %> - <%= site.siteSubTitle %>
+            <%= site.siteName %> - <%= site.siteSubTitle -%>
         <% } else { %>
-            <%= site.siteName %>
+            <%= site.siteName -%>
         <% } %>
     </title>
     <link rel="shortcut icon" href="<%= site.siteIcon %>">
+    <% if (!isIndex) { %>
+        <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.12.0/build/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    <% } %>
 </head>
