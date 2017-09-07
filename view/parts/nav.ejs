@@ -1,17 +1,19 @@
 <div class="index-nav">
     <% if (page.pageNum) { %>
-        <% if (page.pageNum !== 1) { %>
-            <a class="prev" href="/<%- page.pageUrl %>/<%- page.pageNum - 1 %>/"><i class="fa fa-angle-left"></i>&nbsp;Prev</a>
+        <% if (page.pageNum === 2) { %>
+            <a class="prev" href="<%- site.rootDir %>"><i class="fa fa-angle-left"></i>&nbsp;Prev</a>
+        <% } else if (page.pageNum !== 1 ) { %>
+            <a class="prev" href="<%- site.rootDir %><%- page.pageUrl %>/<%- page.pageNum - 1 %>/"><i class="fa fa-angle-left"></i>&nbsp;Prev</a>
         <% } %>
         <% if (!page.lastPage) { %>
-            <a class="next" href="/<%- page.pageUrl %>/<%- page.pageNum + 1 %>/">Next&nbsp;<i class="fa fa-angle-right"></i></a>
+            <a class="next" href="<%- site.rootDir %><%- page.pageUrl %>/<%- page.pageNum + 1 %>/">Next&nbsp;<i class="fa fa-angle-right"></i></a>
         <% } %>
     <% } else { %>
         <% if (page.prevPost !== null) { %>
-            <a class="prev" href="/<%- page.pageUrl %>/<%- page.prevPost %>/"><i class="fa fa-angle-left"></i>&nbsp;Prev</a>
+            <a class="prev" href="<%- site.rootDir %><%- page.pageUrl %>/<%- page.prevPost %>/"><i class="fa fa-angle-left"></i>&nbsp;Prev</a>
         <% } %>
         <% if (page.nextPost !== null) { %>
-            <a class="next" href="/<%- page.pageUrl %>/<%- page.nextPost %>/">Next&nbsp;<i class="fa fa-angle-right"></i></a>
+            <a class="next" href="<%- site.rootDir %><%- page.pageUrl %>/<%- page.nextPost %>/">Next&nbsp;<i class="fa fa-angle-right"></i></a>
         <% } %>
     <% } %>
 </div>
