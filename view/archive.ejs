@@ -1,1 +1,19 @@
-<div class="content archive"></div>
+<div class="content archive">
+    <% Object.keys(page).forEach(function (key) { %>
+        <% if (typeof page[key] === 'object') { %>
+            <div class="row archive-year">
+                <h3><%- key %></h3>
+                <div class="archive-posts">
+                    <% page[key].forEach(function (post) { %>
+                        <div class="col-md-12 archive-post">
+                            <a href="/<%- post.pageUrl %>/<%- post.urlName %>/">
+                                <span class="archive-date"><%- post.day %></span>
+                                <span class="archive-title"><%- post.title %></span>
+                            </a>
+                        </div>
+                    <% }); %>
+                </div>
+            </div>
+        <% } %>
+    <% }); %>
+</div>

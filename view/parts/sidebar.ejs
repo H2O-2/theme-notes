@@ -1,8 +1,8 @@
 <div class="sidebar-bg"></div>
 <div class="personal-info-wrapper">
     <div class="personal-info">
-        <div class="avatar"></div>
+        <a href="/<%- site.personalPage %>"><div class="avatar"></div></a>
         <p class="short-desc"><%- site.authorDescription %></p>
-        <a class="total-post" title="查看所有文章">共计 <span class="post-number"><%- postNum %></span> 篇文章</a>
+        <a class="total-post" title="查看所有文章" href="/<%- site.archiveDir %>/">共计 <span class="post-number"><%- postNum %></span> 篇文章</a>
     </div>
 </div>

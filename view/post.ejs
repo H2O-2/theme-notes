@@ -1,5 +1,20 @@
 <div class="content post">
     <%- include('parts/share') %>
-    <%- contents %>
-    <%- include('parts/nav') %>
+    <div class="blog">
+        <div class="post-header">
+            <h2 class="blog-title"><%- page.title %></h2>
+            <time class="publish-time"><%- page.formatedDate %></time>
+        </div>
+        <div class="blog-main markdown">
+            <%- contents %>
+        </div>
+        <div class="blog-tags">
+            <i class="fa fa-tags"></i>
+            <% page.tags.forEach(function (tag, index) { %>
+                <span class="post-tag"><%- tag -%></span><% if (index >= page.tags.length - 1) { -%>,<% } %>
+            <% }) %>
+        </div>
+        <%- include('parts/nav') %>
+        <%- include('parts/comment') %>
+    </div>
 </div>
