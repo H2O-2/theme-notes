@@ -1,19 +1,17 @@
 <div class="content archive">
-    <% Object.keys(page).forEach(function (key) { %>
-        <% if (typeof page[key] === 'object') { %>
-            <div class="row archive-year">
-                <h3><%- key %></h3>
-                <div class="archive-posts">
-                    <% page[key].forEach(function (post) { %>
-                        <div class="col-md-12 archive-post">
-                            <a href="/<%- post.pageUrl %>/<%- post.urlName %>/">
-                                <span class="archive-date"><%- post.day %></span>
-                                <span class="archive-title"><%- post.title %></span>
-                            </a>
-                        </div>
-                    <% }); %>
-                </div>
+    <% page.posts.forEach(function (yearPost) { %>
+        <div class="row archive-year">
+            <h3><%- yearPost[0].year %></h3>
+            <div class="archive-posts">
+                <% for (var post of yearPost) { %>
+                    <div class="col-md-12 archive-post">
+                        <a href="/<%- post.pageUrl %>/<%- post.urlName %>/">
+                            <span class="archive-date"><%- post.day %></span>
+                            <span class="archive-title"><%- post.title %></span>
+                        </a>
+                    </div>
+                <% } %>
             </div>
-        <% } %>
+        </div>
     <% }); %>
 </div>
