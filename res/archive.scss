@@ -1,0 +1,50 @@
+@import "globals";
+
+.main .archive {
+  .archive-year {
+    margin-left: 2rem;
+    color: $content-color;
+
+    h3 {
+      letter-spacing: 0.2rem;
+    }
+
+    .archive-posts {
+      margin-top: 3rem;
+      font-size: 1.2rem;
+
+      .archive-post {
+        padding-bottom: 1rem;
+
+        a {
+          span {
+            display: inline-block;
+          }
+
+          &:hover {
+            .archive-title {
+              color: black;
+            }
+
+            .archive-date {
+              color: $grey;
+            }
+          }
+
+          .archive-date {
+            vertical-align: middle;
+            padding-right: 3rem;
+            color: $shallow-grey;
+          }
+
+          .archive-title {
+            font-size: 1.4rem;
+            vertical-align: middle;
+            max-width: 65%;
+            color: $content-color;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@import "globals";
+
+body, html {
+  background: $background-color;
+  font-family: "Open Sans", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft JhengHei", "Microsoft YaHei", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: $grey;
+  letter-spacing: 0.02rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+}
+
+a {
+  color: $grey;
+  text-decoration: none;
+
+  &:hover {
+    color: $deep-grey;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: $deep-grey;
+  font-weight: 400;
+}
+
+pre {
+  padding: 0;
+}
+
+.content .hljs {
+  padding: 1em;
+}
+
+hr {
+  border-color: $shallow-grey;
+  opacity: .3;
+}
+
+// Make col-md-3.5
+@media (min-width: 769px) {
+  .col-md-3 {
+    width: 26%;
+  }
+
+  .col-md-9 {
+    width: 74%;
+  }
+
+  .col-md-offset-3 {
+    margin-left: 26%;
+  }
+}
+
+// Tag colour
+.tags {
+  &, & a {
+    font-size: 1rem;
+    color: $shallow-grey;
+  }
+
+  a:hover {
+    color: $grey;
+  }
+}

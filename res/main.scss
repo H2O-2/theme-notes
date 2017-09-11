@@ -1,0 +1,182 @@
+@import "base";
+
+.sidebar {
+  color: $background-color;
+
+  &, .sidebar-bg {
+    position: fixed;
+    height: 100%;
+    max-width: 35%;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .sidebar-bg {
+    background: url("img/side.jpg") center no-repeat;
+    background-size: cover;
+    z-index: -1;
+    width: 26%; // equal to the width of col-md-3
+  }
+
+  .personal-info-wrapper {
+    float: right;
+    min-width: 161px;
+    margin-right: 2rem;
+    font-size: 1.33rem;
+    letter-spacing: 0.05rem;
+
+    .personal-info {
+      position: fixed;
+      bottom: 3rem;
+
+      .avatar {
+        border-radius: 50%;
+        border: 2px solid white;
+        width: 10rem;
+        height: 10rem;
+        background: url("img/avatar.jpg") center no-repeat;
+        background-size: cover;
+        float: right;
+        margin-bottom: 1rem;
+      }
+
+      .total-post {
+        float: right;
+        color: $background-color;
+        border-bottom: 1px solid $background-color;
+
+        &:hover {
+          color: white;
+          border-color: white;
+        }
+      }
+    }
+  }
+}
+
+.main {
+  background: $background-color;
+  padding: 0 3rem 1rem 3rem;
+
+  .main-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  header {
+    margin-top: 3rem;
+    font-weight: 300;
+    letter-spacing: .15rem;
+    font-size: 1.67rem;
+
+    .left-top {
+      float: left;
+    }
+
+    .sidebar-op {
+      cursor: pointer;
+
+      &:hover {
+        color: $deep-grey;
+      }
+
+      i {
+        font-size: 1.5em;
+      }
+    }
+
+    .site-name-op {
+      display: none;
+    }
+
+    #nav {
+      float: right;
+    }
+  }
+
+  .content {
+    padding-top: 6rem;
+    margin-bottom: 5rem;
+  }
+
+  .index-nav {
+    margin-bottom: 6rem;
+    margin-top: 4rem;
+    font-size: 1.5rem;
+
+    .prev {
+      float: left;
+
+      i {
+        font-weight: 800;
+      }
+    }
+
+    .next {
+      float: right;
+
+      i {
+        font-weight: 800;
+      }
+    }
+  }
+
+  footer {
+    float: left;
+    color: $shallow-grey;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Responsive for iPad size devices
+@media (max-width: 768px) {
+  .main header .sidebar-op {
+    display: none;
+  }
+
+  #site-name {
+    display: block;
+  }
+
+  .wrapper .sidebar {
+    .sidebar-bg {
+      width: 0;
+    }
+
+    .personal-info-wrapper {
+      display: none;
+    }
+  }
+}
+
+// Responsive for smart phones
+@media (max-width: 412px) {
+  .index-date {
+    display: none;
+  }
+
+  .wrapper .main {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .main {
+    .content {
+      .blog-content {
+        margin-right: 0;
+        margin-left: 0;
+
+        article {
+          .article-head h3, p {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import "globals";
+
+.social-share {
+  max-width: 3rem;
+  position: fixed;
+  right: 0;
+  padding-right: 10rem;
+  margin-top: 12.5rem;
+
+  .social-share-icon {
+    color: $content-color;
+    border: none;
+    font-size: 2.67rem;
+    margin-bottom: 1.5rem;
+
+    &:hover {
+      background: $background-color;
+      color: black;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    display: none;
+  }
+}

@@ -1,0 +1,50 @@
+@import "main";
+
+.index {
+  .blog-content {
+    margin: 0 6rem 0 2rem;
+    padding-left: 0;
+    padding-right: 0;
+
+    article {
+      .article-head {
+        margin: 1.5rem 0 3rem 0;
+
+        h3 {
+          display: inline-block;
+          margin: 0;
+          max-width: 80%;
+        }
+
+        a {
+          font-size: 1.83rem;
+          color: $deep-grey;
+
+          &:hover {
+            color: black;
+          }
+        }
+      }
+
+      p {
+        padding-bottom: 2.5rem;
+        font-size: 1.25rem;
+        max-width: 80%;
+      }
+
+      .tags {
+        max-width: 80%;
+      }
+
+      hr {
+        margin: 3rem 0 3rem 0;
+      }
+    }
+
+    .date {
+      color: $shallow-grey;
+      font-size: 1rem;
+      float: right;
+    }
+  }
+}
