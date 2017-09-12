@@ -12,7 +12,7 @@
   }
 
   .sidebar-bg {
-    background: url("img/side.jpg") center no-repeat;
+    background: url(theme-config(sidebarBg)) center no-repeat;
     background-size: cover;
     z-index: -1;
     width: 26%; // equal to the width of col-md-3
@@ -34,7 +34,7 @@
         border: 2px solid white;
         width: 10rem;
         height: 10rem;
-        background: url("img/avatar.jpg") center no-repeat;
+        background: url(site-config(avatar)) center no-repeat;
         background-size: cover;
         float: right;
         margin-bottom: 1rem;
