@@ -2,7 +2,7 @@
 ####################         Layout       ####################
 ##############################################################
 styleEntry: 'dist.scss' # entry style file that contains all styles needed
-sidebarBg: './side.jpg' # a dark tone image is recommended
+sidebarBg: 'img/side.jpg' # a dark tone image is recommended
 useBack: true # when in non-index pages, hide all header and show the 'Back' link pointing to index page.
 
 ##############################################################

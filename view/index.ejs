@@ -9,14 +9,18 @@
                     </div>
                     <p><%- post.description %></p>
                     <span class="tags">
-                        <% post.tags.forEach(function (tag) { %>
-                            <i><a><%- tag %></a></i>
+                        <% post.tags.forEach(function (tag, index, arr) { %>
+                            <% if (index >= arr.length - 1) { -%>
+                                <i><a><%- tag %></a></i>
+                            <% } else { %>
+                                <i><a><%- tag %>,</a></i>
+                            <% } %>
                         <% }); %>
                     </span>
                     <hr>
                 </article>
             </div>
         <% }); %>
+        <%- include('parts/nav') %>
     </div>
-    <%- include('parts/nav') %>
 </div>

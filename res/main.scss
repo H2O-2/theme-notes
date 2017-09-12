@@ -28,8 +28,10 @@
     .personal-info {
       position: fixed;
       bottom: 3rem;
+      min-width: 13.4rem;
 
       .avatar {
+        display: block;
         border-radius: 50%;
         border: 2px solid white;
         width: 10rem;
@@ -38,6 +40,11 @@
         background-size: cover;
         float: right;
         margin-bottom: 1rem;
+      }
+
+      .short-desc {
+        text-align: right;
+        clear: both;
       }
 
       .total-post {

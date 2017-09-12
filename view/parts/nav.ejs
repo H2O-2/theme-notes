@@ -9,10 +9,10 @@
             <a class="next" href="<%- site.rootDir %><%- page.pageUrl %>/<%- page.pageNum + 1 %>/">Next&nbsp;<i class="fa fa-angle-right"></i></a>
         <% } %>
     <% } else { %>
-        <% if (page.prevPost !== null) { %>
+        <% if (page.nextPost !== null) { %>
             <a class="prev" href="<%- site.rootDir %><%- page.pageUrl %>/<%- page.prevPost %>/"><i class="fa fa-angle-left"></i>&nbsp;Prev</a>
         <% } %>
-        <% if (page.nextPost !== null) { %>
+        <% if (page.prevPost !== null) { %>
             <a class="next" href="<%- site.rootDir %><%- page.pageUrl %>/<%- page.nextPost %>/">Next&nbsp;<i class="fa fa-angle-right"></i></a>
         <% } %>
     <% } %>

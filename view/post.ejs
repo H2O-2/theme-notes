@@ -10,9 +10,13 @@
         </div>
         <div class="blog-tags">
             <i class="fa fa-tags"></i>
-            <% page.tags.forEach(function (tag, index) { %>
-                <span class="post-tag"><%- tag -%></span><% if (index >= page.tags.length - 1) { -%>,<% } %>
-            <% }) %>
+            <% page.tags.forEach(function (tag, index, arr) { %>
+                <% if (index >= arr.length - 1) { -%>
+                    <span class="post-tag"><%- tag -%></span>
+                <% } else { %>
+                    <span class="post-tag"><%- tag -%>,</span>
+                <% } %>
+            <% }); %>
         </div>
         <%- include('parts/nav') %>
         <%- include('parts/comment') %>
