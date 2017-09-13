@@ -27,8 +27,8 @@ autoComment: false # display disqus comment by default (note that disqus not acc
 
 # share icons that you want to display beside your posts. See http://overtrue.me/share.js/ for details.
 share:
-  - 'qq'
   - 'wechat'
+  - 'qq'
   - 'qzone'
   - 'weibo' # Sina Weibo
   # - 'tencent' # Tencent Weibo

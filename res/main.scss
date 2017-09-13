@@ -45,12 +45,13 @@
       .short-desc {
         text-align: right;
         clear: both;
+        color: $grey-white;
       }
 
       .total-post {
         float: right;
-        color: $background-color;
-        border-bottom: 1px solid $background-color;
+        color: $grey-white;
+        border-bottom: 1px solid $grey-white;
 
         &:hover {
           color: white;

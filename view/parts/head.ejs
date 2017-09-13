@@ -12,7 +12,11 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <% if (site.og) { %>
         <% for (var prop in site.og) { %>
-            <meta name="og:<%= prop %>" content="<%= site.og[prop] -%>">
+            <% if (prop === 'image' && page && page.headImg) { %>
+                <meta name="og:<%= prop %>" content="<%= page.headImg -%>">
+            <% } else { %>
+                <meta name="og:<%= prop %>" content="<%= site.og[prop] -%>">
+            <% } %>
         <% } %>
     <% } %>
     <title>
