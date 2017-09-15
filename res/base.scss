@@ -16,6 +16,11 @@ body, html {
 a {
   color: $grey;
   text-decoration: none;
+  -webkit-transition: 0.25s all linear;
+  -moz-transition: 0.25s all linear;
+  -ms-transition: 0.25s all linear;
+  -o-transition: 0.25s all linear;
+  transition: 0.25s all linear;
 
   &:hover {
     color: $deep-grey;
@@ -40,6 +45,14 @@ pre {
 hr {
   border-color: $shallow-grey;
   opacity: .3;
+}
+
+.row>div, .sidebar>div {
+  -webkit-transition: 0.25s all linear;
+  -moz-transition: 0.25s all linear;
+  -ms-transition: 0.25s all linear;
+  -o-transition: 0.25s all linear;
+  transition: 0.25s all linear;
 }
 
 // Make col-md-3.5

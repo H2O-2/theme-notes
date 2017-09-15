@@ -50,6 +50,8 @@
 
       .total-post {
         float: right;
+        color: $background-color;
+        border-bottom: 1px solid $background-color;
         color: $grey-white;
         border-bottom: 1px solid $grey-white;
 
@@ -77,6 +79,14 @@
     letter-spacing: .15rem;
     font-size: 1.67rem;
 
+    &>span {
+      -webkit-transition: 0.25s all linear;
+      -moz-transition: 0.25s all linear;
+      -ms-transition: 0.25s all linear;
+      -o-transition: 0.25s all linear;
+      transition: 0.25s all linear;
+    }
+
     .left-top {
       float: left;
     }
@@ -93,13 +103,25 @@
       }
     }
 
-    .site-name-op {
+    #show-side {
       display: none;
+      opacity: 0;
     }
 
-    #nav {
+    .nav {
       float: right;
     }
+  }
+
+  .pc-screen {
+    .site-name-op {
+      display: none;
+      opacity: 0;
+    }
+  }
+
+  .mobile-screen {
+    display: none;
   }
 
   .content {
@@ -143,17 +165,26 @@
 
 // Responsive for iPad size devices
 @media (max-width: 768px) {
-  .main header .sidebar-op {
-    display: none;
+  .main {
+    header .sidebar-op {
+      display: none;
+    }
+
+    .pc-screen {
+      display: none;
+    }
+
+    .mobile-screen {
+      display: block;
+    }
   }
 
-  #site-name {
-    display: block;
-  }
+
 
   .wrapper .sidebar {
     .sidebar-bg {
       width: 0;
+      display: none;
     }
 
     .personal-info-wrapper {
@@ -163,7 +194,7 @@
 }
 
 // Responsive for smart phones
-@media (max-width: 412px) {
+@media (max-width: 425px) {
   .index-date {
     display: none;
   }
