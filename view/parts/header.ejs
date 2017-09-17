@@ -2,7 +2,7 @@
     <span class="sidebar-op left-top" id="hide-side" title="隐藏侧边栏">
         <i class="fa fa-angle-double-left"></i>
     </span>
-    <span class="sidebar-op site-name-op left-top" id="pc-site-name">Kawaisou</span>
+    <span class="sidebar-op site-name-op left-top" id="pc-site-name"><%= site.siteName %></span>
     <span class="sidebar-op left-top" id="show-side" title="显示侧边栏">
         <i class="fa fa-angle-double-right"></i>
     </span>
@@ -18,7 +18,7 @@
 </header>
 
 <header class="mobile-screen">
-    <span class="site-name-op left-top" id="mobile-site-name">Kawaisou</span>
+    <span class="site-name-op left-top" id="mobile-site-name"><%= site.siteName %></span>
     <span class="nav">
         <% if (theme.useBack === true && !isIndex) { %>
             <a class="nav-links" href="<%= site.rootDir %>" title="Back to index">Back</a>

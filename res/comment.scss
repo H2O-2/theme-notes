@@ -1,3 +1,29 @@
+.load-disqus {
+    text-align: center;
+
+    h3 {
+    font-size: 1.7rem;
+    margin: 3rem 0 1.5rem 0;
+    display: inline-block;
+    color: $content-color;
+
+    &:hover {
+        color: black;
+        cursor: pointer;
+    }
+    }
+
+    i {
+    display: inline-block;
+    font-size: 2rem;
+    color: $content-color;
+    }
+
+    p {
+    color: $shallow-grey;
+    }
+}
+
 #disqus_thread {
     display: none;
 }
