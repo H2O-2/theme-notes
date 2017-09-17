@@ -23,8 +23,6 @@ header:
 ##################         Post page         #################
 ##############################################################
 
-autoComment: false # display disqus comment by default (note that disqus not accessible in China)
-
 # share icons that you want to display beside your posts. See http://overtrue.me/share.js/ for details.
 share:
   - 'wechat'

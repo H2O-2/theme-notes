@@ -19,6 +19,8 @@
             <% }); %>
         </div>
         <%- include('parts/nav') %>
-        <%- include('parts/comment') %>
+        <% if (site.comment) { %>
+            <%- include('parts/comment') %>
+        <% } %>
     </div>
 </div>
