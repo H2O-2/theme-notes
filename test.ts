@@ -8,9 +8,9 @@ let themeConfig: string, siteConfig: string;
 // function libLoader()
 
 fs.readFile('./theme-config.yaml', 'utf8')
-.then((themeContent: string) => themeConfig = yaml.safeLoad(themeContent))
+.then((themeContent: string) => themeConfig = yaml.safeLoad(themeContent) as string)
 .then(() => fs.readFile('./site-config.yaml', 'utf8'))
-.then((siteContent: string) => siteConfig = yaml.safeLoad(siteContent))
+.then((siteContent: string) => siteConfig = yaml.safeLoad(siteContent) as string)
 .then(() => {
     ejs.renderFile('view/layout.ejs', { theme: themeConfig, site: siteConfig, postNum: 10, isIndex: false }, (err: Error | null, data: string) => {
         if (err) throw err;
