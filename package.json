@@ -15,7 +15,7 @@
     "@types/node": "^8.0.20",
     "ejs": "^2.5.7",
     "fs-extra": "^4.0.1",
-    "js-yaml": "^3.9.1",
+    "js-yaml": "^3.14.0",
     "typescript": "^4.0.5"
   },
   "scripts": {
