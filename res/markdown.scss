@@ -38,6 +38,13 @@
     max-width: 100%;
   }
 
+  figcaption {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    color: $grey;
+  }
+
   blockquote {
     border-left: .2rem solid $grey;
     font-size: 1.33rem;
