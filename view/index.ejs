@@ -7,7 +7,7 @@
                         <h3><a href="/<%- post.pageUrl %>/<%- post.urlName %>/"><%- post.title %></a></h3>
                         <span class="date index-date"><%- post.formatedDate %></span>
                     </div>
-                    <div class="post-descrip markdown"><%- post.description %></div>
+                    <div class="post-descrip markdown"><p><%- post.description %></p></div>
                     <span class="tags">
                         <% post.tags.forEach(function (tag, index, arr) { %>
                             <% if (index >= arr.length - 1) { -%>
